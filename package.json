@@ -1,0 +1,25 @@
+{
+  "name": "@lbennett/hid",
+  "version": "0.0.0",
+  "description": "HID from the browser, kind of",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "12",
+    "@types/node-hid": "^1.2.0",
+    "electron": "^9.0.4",
+    "electron-rebuild": "^1.11.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "node-hid": "^1.3.0"
+  }
+}
